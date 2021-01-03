@@ -1,0 +1,56 @@
+.page-template-private-dining {
+	
+	.s1 {
+		padding-bottom: 3.35em;
+	}
+	
+	.alt-rows {
+		.single-row {
+			margin-bottom: 4.05em;
+			
+			.img-wrap {
+				background-position: center center;
+				background-size: cover;
+				height: auto;
+			}
+			
+			.copy-wrap {
+				background-color: $lilac;
+			
+				.inner {
+					color: $text-white;
+					padding: 2.5em 2em;
+					max-width: 490px;
+					margin: auto;
+					height: 100%;
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+					
+					h2 {
+						color: $text-white;
+					}
+					
+					.btn-wrap {
+						padding-top: 1.1em;
+					}
+					
+				}
+			
+			}
+			
+		&:nth-child(odd) {
+			@include breakpoint(medium) {
+				flex-direction: row-reverse;
+			}
+		}
+			
+		}
+	}
+	
+	.contact-card {
+    	padding-bottom: 8.22em;
+	}
+	
+	
+}

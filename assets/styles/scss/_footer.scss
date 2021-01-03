@@ -1,0 +1,114 @@
+footer.footer {
+	clear: both;
+	
+	.pre-footer {
+		background-color: $lilac;
+		padding-top: 1.93em;
+		padding-bottom: 1.93em;
+		
+		@include breakpoint(medium) {
+			padding-top: 4.8em;
+			padding-bottom: 4.8em;			
+		}
+		
+		a {
+			color: $text-white;
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+		
+		h2 {
+			color: $text-white;
+			font-size: rem-calc(18);
+			line-height: 1.52;
+			margin: 0;
+			
+			@include breakpoint(medium) {
+				font-size: rem-calc(24);
+			}
+
+			@include breakpoint(large) {
+				font-size: rem-calc(30);
+			}
+			
+		}
+	}
+	
+	
+	.inner-footer,
+	.post-footer {
+		background-color: $primary-color;
+		color: $text-white;
+		font-size: rem-calc(16);
+		line-height: 1.72;
+	}
+	
+	.inner-footer {
+		padding-top: 6.4em;
+		padding-bottom: 2.4em;
+		
+		.cell {
+			margin-bottom: .9em;
+		}
+		
+		a {
+			color: $text-white;
+		}
+		
+		p {
+			margin-bottom: 0.65em;
+		}
+		
+		img.footer-logo {
+			margin-bottom: 1.9em;
+		}
+		
+		.address {
+			.grid-x {
+				padding-top: 2.8em;				
+			}
+		}
+				
+		.email-wrap {
+			overflow-wrap: break-word;
+		    word-wrap: break-word;
+		    -ms-word-break: break-all;
+		    word-break: break-all;
+		}
+		
+		.hours-wrap:not(:first-child) {
+			padding-bottom: .25em;			
+		}
+		
+		.menu {
+			a {
+				margin-bottom: 1.2em;
+				padding: 0;
+			}
+		}
+		
+		.divider {
+			height: 1px;
+			width: 42px;
+			background-color: $text-white;
+			margin-top: .5em;
+			margin-bottom: 1.35em;
+		}
+		
+	}
+	
+	.post-footer {
+		padding-bottom: 2.4em;
+		font-size: rem-calc(12);
+		color: $lilac;
+		justify-content: space-between;
+		
+		a {
+			color: $lilac;
+		}
+		
+	}
+	
+		
+}

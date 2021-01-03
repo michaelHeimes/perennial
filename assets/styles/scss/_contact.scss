@@ -1,0 +1,177 @@
+.page-template-page-contact {
+	
+	section.intro-wrap {
+		h3 {
+			line-height: 1.8;
+		}
+	}
+	
+	.contact-wrap {
+		padding-bottom: 8.82em;
+		
+		> div:not(:last-child) {
+			padding-bottom: 0.4em;
+		}
+		
+		a {
+			font-size: rem-calc(22);
+			color: $text;
+		}
+	}
+	
+	section.form-wrap {
+		padding-top: 4.4em;
+			
+		.gform_wrapper {
+		
+			li.gfield {
+
+				label {
+					color: $secondary-color;
+					font-weight: 600;
+					font-size: rem-calc(22);
+					letter-spacing: 1px;
+					text-transform: uppercase;
+				}
+				
+				.ginput_container {
+					margin-top: 1.2em;
+					
+				&.ginput_container_textarea {
+					margin-top: 0;	
+				}
+					
+					input:not([type=radio]):not([type=checkbox]):not([type=submit]):not([type=button]):not([type=image]):not([type=file]) , textarea {
+						padding: 1.2em 0;
+						font-size: rem-calc(18);
+						box-shadow: 0 0 0;
+						border: 0;
+						border-bottom: 1px solid #727272;
+						
+						&::placeholder {
+							color:  #D1D1D1;
+							font-size: rem-calc(18);
+						}
+						
+					}
+					
+					textarea {
+						height: 66px;
+					}
+				
+				}
+				
+				&.gf_left_half,
+				&.gf_right_half {
+					@media only screen and (min-width: 641px) {
+						width: 45%;
+					}
+				}
+				
+				&.gf_left_half {
+					@media only screen and (min-width: 641px) {
+						margin-right: 10%;
+					}
+				}
+				
+			}
+			
+		ul.gfield_radio {
+			padding-bottom: 3.9em;
+			display: flex;
+			flex-wrap: wrap;
+			
+			@media only screen and (min-width: 641px) {
+				justify-content: space-between
+			}
+			
+			li {
+				flex: 0 0 auto;
+			    min-height: 0;
+			    min-width: 0;
+			    width: 100%;
+			    font-size: rem-calc(18);
+			    color: $secondary-color;
+			    position: relative;
+			    
+			    @media only screen and (min-width: 641px) {
+				    width: 25%;
+			    }
+			    
+			&:before {
+				content: '';
+				position: absolute;
+				top: .5em;
+				width: 19px;
+				height: 19px;
+				background-color: $white;
+				border: 2px solid $secondary-color;
+				border-radius: 100%;
+			}
+			
+			&.clicked {
+				&:before {
+					background-color: $secondary-color;
+					border-color: $black;
+				}
+			}
+			
+				label {
+					color: $black;
+					font-weight: 500;
+					text-transform: none;
+					font-size: rem-calc(25);
+				}
+			    
+			    input[type="radio"] {
+				    opacity: 0;
+				    
+					+ label {
+						margin: 0;
+					    padding-left: 1.2em;
+					    color: $black;
+					}
+				    
+				    &:checked {
+					    
+					    &+ label {
+						    font-weight: normal;
+					    }
+					    
+				    }
+				    
+			    }
+			    
+			}
+			
+		}
+			
+		}
+		
+		.gform_footer.top_label {
+			padding-top: 3.87em;
+			padding-bottom: 4.77em;
+			text-align: center;
+			
+			input {
+				font-size: rem-calc(18);
+				border-color: $secondary-color;
+				background-color: $secondary-color;
+				border: 2px solid $secondary-color;
+				color: $text-white;
+				font-weight: 500;
+				text-transform: uppercase;
+				transition: all .25s ease;
+				
+				&:hover {
+					background-color: transparent;
+					color: $primary-color;
+				}
+				
+			}
+			
+		}
+		
+	}
+	
+}

@@ -1,0 +1,242 @@
+.page-template-page-home {
+	
+	.hero-slider {
+		height: 50vh;
+		.slick-slide img {
+			margin: auto;
+		}
+	
+	&.slick-initialized {
+		height: auto;
+	}
+	
+	}
+	
+	section.announcement-copy {
+		
+		.grid-x {
+			min-height: 115px;
+			padding-top: 1.118em;
+			padding-bottom: 1.118em;
+		}
+		
+	}
+	
+	section.intro-copy {
+	    padding-top: 3.15em;
+	    padding-bottom: 3.18em;
+		line-height: 1.8;
+		color: $primary-color;
+		
+		@include breakpoint(medium) {
+		    padding-top: 7em;
+		    padding-bottom: 6.5em;			
+		}
+		
+		img {
+			max-width: 100px;
+			margin-bottom: 1.6em;
+		}
+		
+		h3 {
+			color: $primary-color;
+		}
+		
+	}
+	
+	section.home-menu {
+		padding-bottom: 6em;
+		
+		@include breakpoint(medium) {
+			padding-bottom: 8em;
+		}
+
+		.grid-x {
+			align-items: center;
+			
+			.left {
+				padding-left: 0;
+				padding-right: 0;
+				
+				@include breakpoint(medium) {
+					padding-right: .9375rem;
+				}
+		
+				.menu-slider {
+					margin-bottom: 4em;
+					
+					@include breakpoint(tablet) {
+						margin-bottom: 0;
+					}
+					
+					button.slick-next.slick-arrow {
+						
+						@include breakpoint(medium) {
+							max-width: 60px;
+							right: 0;
+						}
+						
+						@include breakpoint(large) {
+							max-width: none;
+							right: -41px;
+						}
+						
+					}
+					
+					.slick-slide {
+						position: relative;
+						
+					&:after {
+						content: '';
+					    position: absolute;
+						z-index: 1;
+					    top: 0;
+					    bottom: 0;
+					    right: -1px;
+					    width: 1px;
+					    height: 100%;
+					    background: $white;
+					}
+						
+					}			
+					
+				}
+
+			}
+			
+			.menu-cat-wrap {
+				padding-bottom: 1.6em;
+				
+				ul {
+					padding: 0;
+					margin: 0;
+					list-style: none;
+					
+					li {
+						font-family: $header-font-family;
+						color: $primary-color;
+						font-size: rem-calc(17);
+						padding: .55em 1.1em;
+
+						@include breakpoint(medium) {
+							font-size: rem-calc(18);
+						}
+						
+					&:not(:last-child) {
+						border-bottom: 1px solid #B9B9B9;
+					}
+					
+					}
+					
+				}	
+			}
+		
+		}
+		
+	}
+	
+	
+	section.ig-feed {
+		padding-bottom: 7.05em;
+		
+		@include breakpoint(medium) {
+			padding-bottom: 7em;	
+		}
+		
+		.copy-wrap {
+			padding-top: 7vw;
+			padding-bottom: 7vw;
+		
+			p {
+				margin: 0;
+				padding-bottom: 1.28em;
+			}
+		
+		}
+		
+		@media screen and (min-width: 768px) {
+			
+		#sb_instagram {
+			height: 100%;
+
+			#sbi_images {
+				height: 100%;
+				display: flex;
+				flex-wrap: wrap;
+				flex-direction: column;
+				
+				.sbi_item {
+					height: 50%;
+					
+				&:first-child {
+					width: 40%;
+					height: 100%;
+				}
+					
+					.sbi_photo_wrap {
+						height: 100%;
+						
+						a {
+							height: 100% !important;
+						}
+											
+					}
+					
+				}
+			}	
+		}
+		
+		}
+		
+	}
+	
+	
+	section.neighborhood {
+		padding-bottom: 4.35em;
+		
+		.text-wrap {
+			.inner {
+				padding: 3em .9375rem;	
+				
+				p {
+					margin: 0;
+					padding-bottom: 2.35em;
+				}
+							
+			}
+		}
+		
+		@include breakpoint(medium) {
+			.img-wrap {
+				padding-right: 0;
+			}
+			
+			.text-wrap {
+				padding-left: 0;
+				
+			}
+		}
+		
+		.text-wrap {
+			
+			.grid-container,
+			.grid-x {
+				height: 100%;
+			}
+						
+			.grid-x {
+				align-content: center;
+					
+				.inner {
+					padding-bottom: 3.5em;
+					color: $secondary-color;
+					width: 100%;
+				}
+				
+			}
+		}
+		
+	}
+	
+	
+}

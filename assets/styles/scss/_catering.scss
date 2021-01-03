@@ -1,0 +1,33 @@
+.page-template-page-catering {
+	
+	header.article-header.banner .img-wrap {
+		text-align: right;
+		
+		img {
+			max-width: 320px;
+	    	transform: scale(1) translate3d(0,-24px,0);
+    	
+    	@include breakpoint(medium) {
+	    	max-width: 65%;
+    		transform: scale(1) translate3d(0,0,0);
+    	}
+
+    	@include breakpoint(tablet) {
+    		max-width: 738px;
+    		transform: scale(1) translate3d(0,0,0);
+    	}
+    	
+    	}
+	
+	}
+	
+	.img-slider.full-width {
+		margin-top: 3.4em;
+		margin-bottom: .26em;
+	}
+	
+	.contact-card {
+		padding-bottom: 8.22em;		
+	}
+	
+}

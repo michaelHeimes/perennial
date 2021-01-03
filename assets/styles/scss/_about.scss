@@ -1,0 +1,57 @@
+.page-template-page-about {
+
+	header.article-header.banner {
+					
+	}
+	
+	section.s1 {
+		padding-bottom: 2em;
+		
+		.full-width-copy {
+			padding-bottom: 1.65em;
+		}
+		
+		.left {
+			a.button {
+				margin-top: 2.25em;
+			}
+		}
+
+		.right {
+// 			overflow: hidden;
+			
+			img {
+				position: relative;
+				bottom: -32px;
+			}
+				
+		}
+	    
+	}
+	
+	
+	section.s2 {
+		padding-top: 5.2em;
+		padding-bottom: 5.2em;
+		position: relative;
+		background-color: $lilac;
+		
+		h3 {
+			color: $text-white;
+		}
+		
+	}
+
+	.map {
+		img {
+			filter: grayscale(1);
+		}
+	}	
+
+	.img-slider {
+		margin-top: 5.875em;
+		margin-bottom: 5.875em;		
+	}
+
+
+}
