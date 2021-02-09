@@ -45,7 +45,7 @@ get_header(); ?>
 							
 							<div class="right cell small-12 medium-6 tablet-5 tablet-offset-1">
 								<?php the_field('s1_right_copy');?>
-								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-flower.svg"/>
+								<img src="<?php echo get_template_directory_uri(); ?>/assets/images/about-flower.svg" alt="flower sketch"/>
 							</div>
 							
 						</div>
@@ -77,9 +77,8 @@ get_header(); ?>
 					
 				</section>
 				
-				
+				<?php if( have_rows('s3_image_slider') ):?>
 				<section class="img-slider full-width">
-					<?php if( have_rows('s3_image_slider') ):?>
 					<div class="click-right-slider">
 						<?php while ( have_rows('s3_image_slider') ) : the_row();?>	
 						
@@ -91,8 +90,8 @@ get_header(); ?>
 					
 						<?php endwhile;?>
 					</div>
-					<?php endif;?>
 				</section>
+				<?php endif;?>
 			    		    	
 			    					
 			</main> <!-- end #main -->

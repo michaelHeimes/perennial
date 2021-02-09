@@ -17,7 +17,7 @@
 								<div class="cell small-12 medium-8 medium-offset-2 text-center">
 									
 									<a class="arrow-link" href="<?php echo $page_link;?>">
-										<h2><?php the_field('fwcta_text');?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right-white.svg"/></h2>
+										<h2><?php the_field('fwcta_text');?><img src="<?php echo get_template_directory_uri(); ?>/assets/images/arrow-right-white.svg" alt="arrow right"/></h2>
 									</a>
 								
 								</div>
@@ -50,13 +50,13 @@
 										
 										<div class="grid-x grid-padding-x">
 											<div class="cell shrink">
-												<a href="<?php the_field('facebook_url', 'option');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg"/></a>
+												<a href="<?php the_field('facebook_url', 'option');?>" target="_blank" aria-label="facebook page"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/facebook.svg" alt="facebook icon"/></a>
 											</div>
 											<div class="cell shrink">
-												<a href="<?php the_field('instagram_url', 'option');?>" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-white.svg"/></a>
+												<a href="<?php the_field('instagram_url', 'option');?>" target="_blank" aria-label="instagram page"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram-white.svg" alt="instagram icon"/></a>
 											</div>
 											<div class="cell shrink">
-												<a href="mailto:<?php the_field('email_address', 'option');?>"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.svg"/></a>
+												<a href="mailto:<?php the_field('email_address', 'option');?>" aria-label="open new email"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/email.svg" alt="email icon"/></a>
 											</div>											
 										</div>
 										
@@ -105,7 +105,7 @@
 								</div>
 
 								<div class="small-12 medium-shrink cell">
-									<p class="source-org copyright"><a href="https://proprdesign.com/" target="_blank">Made by Propr Design</a></p>
+									<p class="source-org copyright"><a href="https://proprdesign.com/" target="_blank" aria-label="Propr Design Website">Made by Propr Design</a></p>
 								</div>
 								
 							</div>

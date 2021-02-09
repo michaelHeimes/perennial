@@ -11,8 +11,8 @@ get_header(); ?>
 	
 		<div class="inner-content">
 	
-		    <main class="main" role="main">			    
-			    
+		    <main class="main" role="main">
+			    			    
 			    <section class="hero max">
 				    
 				    <?php if( have_rows('hero_slider') ):?>
@@ -58,13 +58,14 @@ get_header(); ?>
 				<?php endif;?>	
 -->	    
 
+				<h1 class="show-for-sr"><?php the_title();?></h1>
 			    
 			    <section class="intro-copy">
 				    <div class="grid-container">
 						<div class="grid-x grid-padding-x">
 							<div class="cell small-12 medium-10 medium-offset-1 large-8 large-offset-2 text-center">
-						    	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/flower@2x.png"/>
-						    	<h3 class="no-bp"><?php the_field('intro_copy');?><h3>
+						    	<img src="<?php echo get_template_directory_uri(); ?>/assets/images/flower@2x.png" alt="prennial sketch"/>
+						    	<h3 class="no-bp"><?php the_field('intro_copy');?></h3>
 							</div>
 						</div>
 				    </div>
@@ -130,7 +131,7 @@ get_header(); ?>
 								<p class="big-copy"><?php the_field('ig_copy');?></p>		
 								
 								<a href="<?php the_field('instagram_url', 'option');?>" target="_blank">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg"/>
+									<img src="<?php echo get_template_directory_uri(); ?>/assets/images/instagram.svg" alt="instagram icon"/>
 								</a>
 								
 							</div>

@@ -36,8 +36,8 @@
 			slidesToScroll: 1,
 			dots: false,
 			rows: 0,
-			nextArrow: '<button class="slick-next"><img src="/wp-content/themes/perennial/assets/images/next-arrow.svg"/></button>',
-			prevArrow: '<button class="slick-prev hide"></button>',
+			nextArrow: '<button class="slick-next" aria-label="next slide"><img src="/wp-content/themes/perennial/assets/images/next-arrow.svg" alt="next arrow"/></button>',
+			prevArrow: '<button class="slick-prev hide" aria-label="previous slide"></button>',
 		});
 	}
 	
