@@ -12,6 +12,12 @@
 		}
 		
 		.left {
+			margin-bottom: 4em;
+			
+			@include breakpoint(medium) {
+				margin-bottom: 0;
+			}
+			
 			a.button {
 				margin-top: 2.25em;
 			}
